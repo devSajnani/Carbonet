@@ -1,0 +1,72 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="script.js"></script>
+    <script src="https://kit.fontawesome.com/bb51e0dff0.js" crossorigin="anonymous"></script>
+    <title>Carbonet|Home Page</title>
+</head>
+<body>
+    
+    <div id="header" >
+       <nav>
+        <div class="logo"> <img src="assets/WhatsApp_Image_2021-06-14_at_11_opt.png"></div>
+            <button class="hamburger" id="hamburger" onclick="show()">
+                <i class="fas fa-bars"></i>
+            </button>
+            <ul class="nav-ul" id="nav-ul">
+                <li><a href="index.html" style="color: black; text-decoration: none;">Home</a></li>
+                <li><a href="calculator.html" style="color: black; text-decoration: none;">Calculator</a></li>
+                <li><a href="solutions.html" style="color: black; text-decoration: none;">Solutions</a></li>
+            </ul>
+        </nav>  
+
+    </div >
+    <div style="padding: 60px;"></div>
+    <div style="margin:30px; background-color:white;">
+   
+    <div id="calculator">
+        <h1>Your Carbon Calculator</h1>
+        <p>For questions related to time, give your answer in hours unless mentioned otherwise.</p>
+        <div id="question1" class="questions">
+        <label for="music">For how much time do you approximately stream music over the internet per day?</label><br>
+        <input type="number" name="music" min="0" max="24" id="music" inputmode="numeric">
+        </div>
+        <div id="question2" class="questions">
+        <label for="video">How much do you approximately spend streaming video on platforms such as Netflix or Youtube?</label><br>
+        <input type="number" name="video" min="0" max="24" id="video" inputmode="numeric">
+        </div>
+        <div id="question3" class="questions">
+            <label for="social_media">How much do you spend scrolling on social media platforms such as Instagram or Twitter in one day?</label><br>
+        <input type="number" name="social_media" min="0" max="24" id="social_media" inputmode="numeric">
+        </div>
+        <div id="question4" class="questions">
+            <label for="calls">Approximately how much time do you spend over phone calls?</label><br>
+        <input type="number" name="calls" min="0" max="24" id="calls" inputmode="numeric">
+        </div>
+        <div id="question5" class="questions">
+            <label for="data">If you know, how much is your daily internet consumption in GigaBytes(GB)</label><br>
+        <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric">
+        </div>
+        <div id="question6" class="questions">
+            <label for="emails">How many emails do you send and receive per day?</label><br>
+            <input type="number" name="email" id="emails" inputmode="numeric">
+        </div>
+        </div>    
+
+    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fas fa-angle-up" style="size: 2px;"></i></button>
+    <div id="footer">
+        <nav>
+            <ul>
+                <li><span>About Us</span></li>
+                <li><span>Calculator</span></li>
+                <li><span>Solutions</span></li>
+            </ul>
+        </nav>
+    </div>
+
+</body>
+</html>

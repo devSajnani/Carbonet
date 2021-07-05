@@ -31,39 +31,51 @@
     <div id="calculator">
         <h1>Your Carbon Calculator</h1>
         <p>For questions related to time, give your answer in hours unless mentioned otherwise.</p>
-        <div id="question1" class="questions">
-        <label for="music">For how much time do you approximately stream music over the internet per day?</label><br>
+        <form id="myform">
+        
+        <label for="music" class="questions">For how much time do you approximately stream music over the internet per day?</label><br>
         <input type="number" name="music" min="0" max="24" id="music" inputmode="numeric">
-        </div>
-        <div id="question2" class="questions">
-        <label for="video">How much do you approximately spend streaming video on platforms such as Netflix or Youtube?</label><br>
+        <br>
+        <label for="video" class="questions">How much do you approximately spend streaming video on platforms such as Netflix or Youtube?</label><br>
         <input type="number" name="video" min="0" max="24" id="video" inputmode="numeric">
-        </div>
-        <div id="question3" class="questions">
-            <label for="social_media">How much do you spend scrolling on social media platforms such as Instagram or Twitter in one day?</label><br>
+        <br>
+            <label for="social_media" class="questions">How much do you spend scrolling on social media platforms such as Instagram or Twitter in one day?</label><br>
         <input type="number" name="social_media" min="0" max="24" id="social_media" inputmode="numeric">
-        </div>
-        <div id="question4" class="questions">
-            <label for="calls">Approximately how much time do you spend over phone calls?</label><br>
+        <br>
+            <label for="calls" class="questions" >Approximately how much time do you spend over phone calls?</label><br>
         <input type="number" name="calls" min="0" max="24" id="calls" inputmode="numeric">
-        </div>
-        <div id="question5" class="questions">
-            <label for="data">If you know, how much is your daily internet consumption in GigaBytes(GB)</label><br>
+        <br>
+            <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?</label><br>
         <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric">
-        </div>
-        <div id="question6" class="questions">
-            <label for="emails">How many emails do you send and receive per day?</label><br>
+        <br>
+            <label for="emails" class="questions">How many emails do you send and receive per day?</label><br>
             <input type="number" name="email" id="emails" inputmode="numeric">
-        </div>
+    </form>
+    
         </div>    
+        <button id='calcButton' onclick="calculate();">Find your footprint!</button>
+        
+
+        <div class="answer" style="display: none;">
+            <p>Your daily carbon emissions from device usage have an estimated lower bound of
+            </p>
+            <br>
+            <p class="car_comp"></p>
+
+            <h3>What I'd like to say for these estimates is that more often than not, your daily carbon emissions pertaining to device usage are going to be higher than this. This is because the calculator does not include a lot of things that are very subjective and not that easy to point out for users(which is why we didn't include them), but that does not mean that those emissions do not exist. 
+                A few very obvious examples of such questions are time spent gaming, time spent on all of your devices(laptops, smartphones and tablets combined; this is important as there are many people, including myself, who need to use various devices at once for greater efficiency), and texting habits. 
+                It's much more difficult to point out the carbon emissions of these values specifically because each online game requires a different amount of bandwidth; similarly each device discharges a different amount of power with each full charge, meaning that it's almost impossible to estimate the emissions due to electricity usage for each device. 
+                And is there anyone on the planet who counts the number of texts they send in a day?
+            </h3>
+        </div>
 
     <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fas fa-angle-up" style="size: 2px;"></i></button>
     <div id="footer">
         <nav>
             <ul>
-                <li><span>About Us</span></li>
-                <li><span>Calculator</span></li>
-                <li><span>Solutions</span></li>
+                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
+                <li><a href="calculator.html" style="color: white; text-decoration: none;">Calculator</a></li>
+                <li><a href="solutions.html" style="color: white; text-decoration: none;">Solutions</a></li>
             </ul>
         </nav>
     </div>

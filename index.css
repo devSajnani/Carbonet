@@ -196,6 +196,10 @@ input[type=number] {
         display: flex;
         flex-direction: column;
     }
+    .svg-container div:last-child{
+        margin-left:15px; 
+        margin-right: 15px;
+    }
   }
 
   @media  screen and (min-width: 600px) {

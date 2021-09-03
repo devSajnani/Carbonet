@@ -1,69 +1,227 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-    <link rel="stylesheet" href="index.css">
-    <script src="script.js"></script>
-    <script src="https://kit.fontawesome.com/bb51e0dff0.js" crossorigin="anonymous"></script>
-    <title>Carbonet|Home Page</title>
-</head>
-<body>
-    <div id="header" >
-       <nav>
-        <div class="logo"> <img src="assets/WhatsApp_Image_2021-06-14_at_11_opt.png"></div>
-            <button class="hamburger" id="hamburger" onclick="show()">
-                <i class="fas fa-bars"></i>
-            </button>
-            <ul class="nav-ul" id="nav-ul">
-                <li><a href="index.html" style="color: black; text-decoration: none;">Home</a></li>
-                <li><a href="calculator.html" style="color: black; text-decoration: none;">Calculator</a></li>
-                <li><a href="solutions.html" style="color: black; text-decoration: none;">Solutions</a></li>
-            </ul>
-        </nav>  
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Carbonet|Your personal digital footprint calculator</title>
+    <link href="styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1 id="heading">Carbonet.in</h1>
+        <h2>An initiative to reduce carbon footprints through individual contributions.</h2>
+        <p>
+          
+        </p>
+      </div>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#calculator">Calculator</a></li>
+        <li><a href="#resources">Resources</a></li>
+      </ul>
+    </nav>
 
-    </div >
-    <div style="padding: 60px;"></div>
-    <div style="margin:30px; background-color:white;">
-    <div style="margin-left: 10px;margin-right: 10px; margin-top: 20px;">
-            
-            <h4 style="margin-left:2em; padding-top: 1.5em;margin-bottom: 2em;">Carbonet.in is your digital carbon footprint calculator that utilizes data from various scientifically-proven resources to give a simple estimate of your footprint.</h4>
-            <div id="main" class="content">
-            <h3>The Impact of going Online</h3>
+    <main id="main" tabIndex="-1">
+      <div class="container">
+        <article id="about">
+          <section class="container">
+            <h2>Getting Started.</h2>
             <p>
-                Digital devices and services are an integral part of our lives. It’s hard to imagine a life without smartphones, search engines, apps, and having a huge selection of music and movies at our fingertips . All of these things make our lives so much easier.However,you may be surprised to discover that the data that you’re sending and receiving all over the globe actually carries rather heavy baggage: an individual’s online activities are responsible for producing 414 kgs of carbon dioxide every year.<br>
-                Our use of digital technologies contributes to 3.7% of global CO2 emissions, which has a bigger impact on global warming than the entire aviation industry.<br>
-                Each search query emits around 1.45 grams of CO2. If we use a search engine to make around 50 search queries per day, this produces a huge 26 kilograms of CO2 per year.
-                This may not sound like a lot at the individual level but a single search query billions of times around the globe adds up to leave an environmental impact that is difficult to ignore.
-                Streaming a one hour show on Netflix consumes about 300 watt hours of electric energy. This is equivalent to driving one kilometre in a small car. Collectively, the average CO2 consumption of streamed online video is more than 300 million tons per year .This is the same as emitted by the whole of Spain in a year.<br>
-                For the cryptocurrency enthusiasts, a single Bitcoin transaction consumes around 819 kWh. The same amount of energy could operate a 150-watt refrigerator for about eight months.
+              Digital devices and services are an integral part of 
+              our lives. It’s hard to imagine a life without smartphones,
+              search engines, apps, and having a huge selection of music
+               and movies at our fingertips. All of these things make our lives
+              so much easier. However, you may be surprised to discover that
+              the data that you’re sending and receiving all over the globe
+              actually carries rather heavy baggage: an individual’s online
+              activities are responsible for producing 414 kgs of carbon dioxide
+              every year.
+
             </p>
-            </div>
-    </div>
-    </div>
-    <div style="background: transparent; height: 10px;" ></div>
-  <div class="svg-container">
-      <div style=" margin-left: 2em; margin-bottom: 2vh; border-radius: 10%; display: flex; flex-direction: column;  align-items: center; border: 2px solid black; justify-content: center; margin-right: 2em; padding: 30px;">
-      <h4 style="margin-left: 3em ;">There has been an exponential increase in internet traffic over the past few years.</h6>
-      <p style="font-size:13px; margin-top: 40px; font-size: 21px; font-weight: lighter;">We can see that workloads on data centres have also risen. <br> What this directly means is that carbon emissions have risen a lot too.</p>
-    </div>
-    <div>
-      <svg version="1.1" xmlns="http://www.w3.org/2000/svg" style="font-family: Arial; " width="800" height="450" viewBox="0 0 800 450"><title>Global trends in internet traffic, data centre workloads and data centre energy use, 2015-2021</title><defs><clipPath id="chart-clipPath-exact"><rect height="315" width="490"></rect></clipPath><clipPath id="chart-clipPath-buffer"><rect x="-10" y="-10" height="335" width="510"></rect></clipPath></defs><g class="scaler"><rect width="800" height="450" fill="rgb(255, 255, 255)" fill-opacity="1"></rect><g class="canvas" transform="translate(85,63)"><g class="grid"><g class="axis-grid x" transform="translate(0,314)"></g><g class="axis-grid y" transform="translate(1,0)"></g><g class="axis-grid y2" transform="translate(489.5,0)"></g><g class="axis-grid x2" transform="translate(0,1)"></g></g><rect class="trigger-layer" height="379" width="724" opacity="0"></rect><g class="chart"><g class="series s0"><path class="line" clip-path="url(#chart-clipPath-exact)" visibility="visible" fill="none" stroke="rgb(120, 140, 139)" stroke-opacity="1" stroke-width="1" d="M2,313L83.33333333333333,311.748L164.66666666666666,311.748L246,310.496L327.3333333333333,312.374L408.66666666666663,313L490,313"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(2,313)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(83.33333333333333,311.748)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(164.66666666666666,311.748)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(246,310.496)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(327.3333333333333,312.374)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(408.66666666666663,313)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(490,313)"></path></g><g class="series s1"><path class="line" clip-path="url(#chart-clipPath-exact)" visibility="visible" fill="none" stroke="rgb(0, 119, 149)" stroke-opacity="1" stroke-width="1" d="M2,313L83.33333333333333,292.342L164.66666666666666,270.432L246,246.644L327.3333333333333,225.986L408.66666666666663,204.076L490,179.662"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(2,313)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(83.33333333333333,292.342)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(164.66666666666666,270.432)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(246,246.644)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(327.3333333333333,225.986)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(408.66666666666663,204.076)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(490,179.662)"></path></g><g class="series s2"><path class="line" clip-path="url(#chart-clipPath-exact)" visibility="visible" fill="none" stroke="rgb(0, 186, 201)" stroke-opacity="1" stroke-width="1" d="M2,313L83.33333333333333,289.212L164.66666666666666,261.668L246,227.238L327.3333333333333,180.288L408.66666666666663,122.696L490,50.70600000000002"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(2,313)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(83.33333333333333,289.212)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(164.66666666666666,261.668)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(246,227.238)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(327.3333333333333,180.288)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(408.66666666666663,122.696)"></path><path class="point" clip-path="url(#chart-clipPath-buffer)" visibility="hidden" transform="translate(490,50.70600000000002)"></path></g></g><g class="axes"><g class="axis-labels"><g class="bottom"><g class="label" transform="translate(245,341)"><text style="text-anchor: middle; font-family: Arial; font-size: 16px; " fill="rgb(102, 102, 102)" dy="16" transform="rotate(0)">2015</text></g></g><g class="left"><g class="label" transform="translate(-60,157.5)"><text style="text-anchor: middle; font-family: Arial; font-size: 16px; " fill="rgb(102, 102, 102)" dy="16" transform="rotate(270)"></text></g></g></g><g class="axis bottom" transform="translate(0,314)"><g class="tick major" style="opacity: 1; display: block; " transform="translate(2,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2015</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(83.33333333333333,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2016</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(164.66666666666666,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2017</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(246,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2018</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(327.3333333333333,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2019</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(408.66666666666663,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2020</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(490,0)"><line y2="7" x2="0"></line><text y="10" x="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: middle; " transform="rotate(0, 0, 10)translate(0,0)" data-org-x="0" data-org-y="10">2021</text></g><path class="domain" d="M2,0V0H490V0" stroke-width="2" fill="none" stroke="rgb(188, 188, 188)" stroke-opacity="1"></path><path class="filler" d="M0,0V0H2V0" stroke-width="2" fill="none" stroke="rgb(188, 188, 188)" stroke-opacity="1"></path></g><g class="axis left" transform="translate(1,0)"><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,313)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">100</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,250.4)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">200</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,187.8)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">300</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,125.20000000000002)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">400</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,62.599999999999994)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">500</text></g><g class="tick major" style="opacity: 1; display: block; " transform="translate(0,0)"><line x2="-7" y2="0"></line><text x="-10" y="0" dy="7" style="fill: #666666; fill-opacity: 1; font-family: Arial; font-size: 14px; text-anchor: end; " transform="rotate(0, -10, 0)translate(0,0)" data-org-x="-10" data-org-y="0">600</text></g><path class="domain" d="M0,0H0V313H0" stroke-width="2" fill="none" stroke="rgb(188, 188, 188)" stroke-opacity="1"></path></g></g></g><g class="label" transform="translate(25,25)"><text style="text-anchor: start; font-family: Arial; font-size: 13px; " fill="rgb(102, 102, 102)" dy="13" transform="rotate(0)">Global trends in internet traffic, data centre workloads and data centre energy use, 2015-2021</text></g><g class="legend" transform="translate(599.1013488769531,25)"><g class="row" transform="translate(0,0)"><text class="key" style="font-size: 14px; fill: #666666; fill-opacity: 1; " dx="28" dy="14">Data Centre Energy Use</text><path class="shape" d="M0,7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,-7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,7.898654169668588Z" style="fill: #788c8b; fill-opacity: 1; " transform="translate(14,9.24)"></path></g><g class="row" transform="translate(0,30.138652801513672)"><text class="key" style="font-size: 14px; fill: #666666; fill-opacity: 1; " dx="28" dy="14">Data Centre Worklaod</text><path class="shape" d="M0,7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,-7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,7.898654169668588Z" style="fill: #007795; fill-opacity: 1; " transform="translate(14,9.24)"></path></g><g class="row" transform="translate(0,60.277305603027344)"><text class="key" style="font-size: 14px; fill: #666666; fill-opacity: 1; " dx="28" dy="14">Internet Traffic</text><path class="shape" d="M0,7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,-7.898654169668588A7.898654169668588,7.898654169668588 0 1,1 0,7.898654169668588Z" style="fill: #00bac9; fill-opacity: 1; " transform="translate(14,9.24)"></path></g></g></g></svg>
-    </div>
-</div>  
+            <p>
+              <strong>Carbonet.in</strong> seeks to raise awareness
+              about the environmental impacts of using digital devices
+              and the internet.
+            </p>
+            <blockquote>
+              <p>
+                <strong>How it works:</strong> Visit the
+                <a href="#calculator">"Calculator"</a> section on our page and answer a few questions.
+                 We perform a few calculations based on data gathered from resources to estimate your
+                 carbon footprint from digital device usage. You are always invited to 
+                <a href="#contribute">contribute</a>!
+              </p>
+            </blockquote>
+            <p>
+              This page was created to serve as a platform for people
+              to access our calculator, and to accumulate all resources
+              for people who might be interested in knowing more.
+            </p>
+          </section>
+          <section class="container">
+            <h2>The Environmental Impact of Going Online</h2>
+            <p>
+              Each search query emits around 1.45 grams of CO2. If we
+             use a search engine to make around 50 search queries per
+             day, this produces a huge 26 kilograms of CO2 per year. This
+             may not sound like a lot at the individual level but a single
+             search query billions of times around the globe adds up to
+            leave an environmental impact that is difficult to ignore.
+             Streaming a one hour show on Netflix consumes about 300 watt hours
+            of electric energy. This is equivalent to driving one kilometre
+             in a small car. Collectively, the average CO2 consumption of
+            streamed online video is more than 300 million tons per year. 
+            This is the same as emitted by the whole of Spain in a year.
 
-</div>
-    <button onclick="topFunction()" id="myBtn" title="Go to top"><i class=" fas fa-angle-up" style="size: 2px;"></i></button>
-    <div id="footer">
-        <nav>
-            <ul>
-                <li><a href="index.html" style="color: white; text-decoration: none;">Home</a></li>
-                <li><a href="calculator.html" style="color: white; text-decoration: none;">Calculator</a></li>
-                <li><a href="solutions.html" style="color: white; text-decoration: none;">Solutions</a></li>
-            </ul>
-        </nav>
-    </div>
-
-</body>
+            </p>
+            <p>Our use of digital technologies contributes to 3.7% of
+               global CO2 emissions, which has a bigger impact on global warming
+                than the entire aviation industry.
+            </p>
+           
+            <p>
+             An improved understanding of impacts is necessary to make solutions
+              for accessible and solutions more unambiguous.
+            </p>
+          </section>
+        </article>
+        <article id="calculator">
+          <section class="container">
+            <h2>Your Carbon Footprint Calculator</h2>
+            <p>
+              We use a very simple algorithm and average data collected from research papers,
+              websites, and books to estimate your footprint.
+            </p>
+            <p>
+              You should know that this estimation is very rough since a lot of factors cannot be accounted for. 
+              More on this later!
+            </p>
+            <form id="myform">
+        
+              <label for="music" class="questions">For how much time do you approximately stream music over the internet per day?</label><br>
+              <input type="number" name="music" min="0" max="24" id="music" inputmode="numeric">
+              <br>
+              <label for="video" class="questions">How much do you approximately spend streaming video on platforms such as Netflix or Youtube?</label><br>
+              <input type="number" name="video" min="0" max="24" id="video" inputmode="numeric">
+              <br>
+                  <label for="social_media" class="questions">How much do you spend scrolling on social media platforms such as Instagram or Twitter in one day?</label><br>
+              <input type="number" name="social_media" min="0" max="24" id="social_media" inputmode="numeric">
+              <br>
+                  <label for="calls" class="questions" >Approximately how much time do you spend over phone calls?</label><br>
+              <input type="number" name="calls" min="0" max="24" id="calls" inputmode="numeric">
+              <br>
+                  <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?</label><br>
+              <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric">
+              <br>
+              <p>Approximately how many total emails do you send AND receive per day?</p>
+                  <input type="radio" name="fav_language" value="100">
+                  <label for="100"><100</label><br>
+                  <input type="radio" id="css" name="fav_language" value="200">
+                  <label for="200">100-300</label><br>
+                  <input type="radio" id="javascript" name="fav_language" value="500">
+                  <label for="500">300+</label>
+          </form>
+            <a href="" class="link-guidelines" onclick="calculate();">Calculate your footprint!</a>
+          </section>
+        </article>
+      <!--  <article id="contribute">
+          <section class="container">
+            <h2>Contribute</h2>
+            <p>All who are conscience of the environment and wish that more people should follow sustainable practices are welcome to contribute!</p>
+            <p>
+             As a contributer to the project, your work could include writing blogs for us, suggesting and improving our website, and participating in our podcasts. 
+            </p>
+          </section>
+          <section class="container">
+            <h3>Steps to Contribute</h3>
+            <ol>
+              <li>
+                Use our carbon footprint calculator to find your digital carbon footprint.
+              </li>
+              <li>
+                Go through some of our material such as solutions, our podcasts, blogs, and instagram videos, to know a bit more about carbon footprints.
+              </li>
+              <li>
+                Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a>. We will contact you in 3-5 days.
+              </li>
+            </ol>
+            <p>Can't await your responses!</p>
+          </section>
+                  </article> -->
+      </div>
+    </main>
+    <aside id="resources" class="profile" aria-labelledby="profile-title">
+      <div class="container">
+        <h4 id="profile-title">Blogs</h4>
+        <ul>
+          <li class="profile-title">Earth Overshoot Day 2021</li>
+          <li class="profile-author">Carbon Markets</li>
+        
+        </ul>
+      </div>
+    </aside>
+    <aside id="styles">
+      <div class="container">
+        <h2>Featured Podcasts</h2>
+        <ul class="features">
+          <li>
+            <span>
+              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1">Ma'am Sunita Rajesh<span aria-hidden="true"></a>
+            </span>
+          </li>
+        </ul>
+      </div>
+    </aside>
+    <footer class="page-footer">
+      <div class="container">
+        <p>
+          Created and maintained by
+          the Carbonet.in team.
+        </p>
+        <ul>
+          <li>
+            <a href="https://open.spotify.com/show/6R8Jpoc2b7yZc6EcoTc0H7?si=aOTgMaMXQliO417SXueazg&dl_branch=1" class="link-github"
+              ><svg width="60px" height="60px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect fill="#D2FBD0" height="60"
+                 rx="10" width="60"/><circle cx="30" cy="30" fill="#c1f7fd" r="27"/><path d="M30,53.5A23.5,23.5,0,1,1,53.5,30,23.527,23.527
+                 ,0,0,1,30,53.5Zm0-44A20.5,20.5,0,1,0,50.5,30,20.523,20.523,0,0,0,30,9.5Z" /><path d="M36.854,43.5a1.493,1.493,
+                 0,0,1-.688-.168A25.618,25.618,0,0,0,20.078,40.92a1.5,1.5,0,1,1-.536-2.951,28.616,28.616,0,0,1,18,2.7,1.5,1.5,0,0,1-.69,2.832Z"
+                  fill="#7bcdd1"/><path d="M44.788,27.88a2.476,2.476,0,0,1-1.035-.226,49.111,49.111,0,0,0-26.332-3.947,2.5,2.5,0,0,1-.645-4.959A54.106,
+                  54.106,0,0,1,45.825,23.1a2.5,2.5,0,0,1-1.037,4.776Z" fill="#7bcdd1"/><path d="M40.822,35.683a1.979,1.979,0,0,1-.858-.194,37.253,
+                  37.253,0,0,0-21.217-3.181,2,2,0,1,1-.583-3.957,41.275,41.275,0,0,1,23.518,3.525,2,2,0,0,1-.86,3.807Z" fill="#7bcdd1"/><path 
+                  d="M36.854,43.5a1.493,1.493,0,0,1-.688-.168A25.618,25.618,0,0,0,20.078,40.92a1.5,1.5,0,1,1-.536-2.951,28.616,28.616,0,0,1,18,
+                  2.7,1.5,1.5,0,0,1-.69,2.832Z" fill="#7bcdd1"/><path d="M8,31.5A1.5,1.5,0,0,1,6.5,30,23.527,23.527,0,0,1,30,6.5a1.5,1.5,0,0,1,0,
+                  3A20.523,20.523,0,0,0,9.5,30,1.5,1.5,0,0,1,8,31.5Z" fill="#bbd9c8"/></svg>
+              Listen to our podcasts.</a
+            >
+          </li>
+          <li><a href="https://www.instagram.com/carbonet.in/" class="link-support">
+            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+            width="25px" height="25px" viewBox="0 0 169.063 169.063" style="padding-right: 4px;"
+            xml:space="preserve">
+         <g>
+           <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
+             c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
+             c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
+             c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
+           <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
+             C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
+             c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
+           <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
+             c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
+             C135.661,29.421,132.821,28.251,129.921,28.251z"/>
+         </g>
+         </svg>
+         Follow us on Instagram</a></li>
+        </ul>
+        <p>
+          Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a>.
+        </p>
+        
+      </div>
+    </footer>
+    <script src="script.js"></script>
+  </body>
 </html>

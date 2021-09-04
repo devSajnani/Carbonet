@@ -52,7 +52,7 @@
                 <a href="#calculator">"Calculator"</a> section on our page and answer a few questions.
                  We perform a few calculations based on data gathered from resources to estimate your
                  carbon footprint from digital device usage. You are always invited to 
-                <a href="#contribute">contribute</a>!
+                contribute!
               </p>
             </blockquote>
             <p>
@@ -88,7 +88,7 @@
             </p>
           </section>
         </article>
-        <article id="calculator">
+        <article id="calculator" >
           <section class="container">
             <h2>Your Carbon Footprint Calculator</h2>
             <p>
@@ -116,41 +116,32 @@
                   <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?</label><br>
               <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric">
               <br>
-              <p>Approximately how many total emails do you send AND receive per day?</p>
-                  <input type="radio" name="fav_language" value="100">
-                  <label for="100"><100</label><br>
-                  <input type="radio" id="css" name="fav_language" value="200">
-                  <label for="200">100-300</label><br>
-                  <input type="radio" id="javascript" name="fav_language" value="500">
-                  <label for="500">300+</label>
+              <label>Approximately how many total emails do you send AND receive per day?<br>(Pre-checked an option)</label><br>
+                  <input type="radio" class="mail" value="less" checked /><100 <br>
+                  <input type="radio" class="mail" value="medium" />100-300 <br>
+                  <input type="radio" class="mail" value="high" />300+ <br>
+                  <a id="formSubmit" class="link-guidelines" onclick="Calculate();">Calculate your footprint!</a>
           </form>
-            <a href="" class="link-guidelines" onclick="calculate();">Calculate your footprint!</a>
+         
+            <div class="answer">
+              <h1></h1>
+              <div style="display: grid;">
+                <div class="car-equivalent">
+                  <lord-icon
+                  src="https://cdn.lordicon.com/uetqnvvg.json"
+                  id="car-icon" 
+                  colors="primary:#d2fbd0,secondary:#c4f5fc"
+                  trigger="loop"
+                  style="width:250px;height:250px; display: none; justify-content: center; ">
+                  </lord-icon>
+              </div>
+            <div class="air-equivalent">
+
+            </div>
+            </div>
+            </div>
           </section>
         </article>
-      <!--  <article id="contribute">
-          <section class="container">
-            <h2>Contribute</h2>
-            <p>All who are conscience of the environment and wish that more people should follow sustainable practices are welcome to contribute!</p>
-            <p>
-             As a contributer to the project, your work could include writing blogs for us, suggesting and improving our website, and participating in our podcasts. 
-            </p>
-          </section>
-          <section class="container">
-            <h3>Steps to Contribute</h3>
-            <ol>
-              <li>
-                Use our carbon footprint calculator to find your digital carbon footprint.
-              </li>
-              <li>
-                Go through some of our material such as solutions, our podcasts, blogs, and instagram videos, to know a bit more about carbon footprints.
-              </li>
-              <li>
-                Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a>. We will contact you in 3-5 days.
-              </li>
-            </ol>
-            <p>Can't await your responses!</p>
-          </section>
-                  </article> -->
       </div>
     </main>
     <aside id="resources" class="profile" aria-labelledby="profile-title">
@@ -169,7 +160,7 @@
         <ul class="features">
           <li>
             <span>
-              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1">Ma'am Sunita Rajesh<span aria-hidden="true"></a>
+              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1" target="_blank" rel="noopener noreferrer">Ma'am Sunita Rajesh<span aria-hidden="true"></a>
             </span>
           </li>
         </ul>
@@ -183,7 +174,7 @@
         </p>
         <ul>
           <li>
-            <a href="https://open.spotify.com/show/6R8Jpoc2b7yZc6EcoTc0H7?si=aOTgMaMXQliO417SXueazg&dl_branch=1" class="link-github"
+            <a href="https://open.spotify.com/show/6R8Jpoc2b7yZc6EcoTc0H7?si=aOTgMaMXQliO417SXueazg&dl_branch=1" target="_blank" rel="noopener noreferrer" class="link-github"
               ><svg width="60px" height="60px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect fill="#D2FBD0" height="60"
                  rx="10" width="60"/><circle cx="30" cy="30" fill="#c1f7fd" r="27"/><path d="M30,53.5A23.5,23.5,0,1,1,53.5,30,23.527,23.527
                  ,0,0,1,30,53.5Zm0-44A20.5,20.5,0,1,0,50.5,30,20.523,20.523,0,0,0,30,9.5Z" /><path d="M36.854,43.5a1.493,1.493,
@@ -197,7 +188,7 @@
               Listen to our podcasts.</a
             >
           </li>
-          <li><a href="https://www.instagram.com/carbonet.in/" class="link-support">
+          <li><a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" class="link-support">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="25px" height="25px" viewBox="0 0 169.063 169.063" style="padding-right: 4px;"
             xml:space="preserve">
@@ -215,13 +206,16 @@
          </g>
          </svg>
          Follow us on Instagram</a></li>
+         <li><a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer" class="link-support"><img src="https://img.icons8.com/office/16/000000/globe.png"/>Find your complete footprint using our OnlyPlanet referral link!</a></li>
         </ul>
         <p>
-          Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a>.
+          Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a> 
+          (right click on the link and copy the address if you're not redirected).
         </p>
         
       </div>
     </footer>
     <script src="script.js"></script>
+    <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
   </body>
 </html>

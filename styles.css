@@ -424,3 +424,7 @@ aside.profile .container ul + a:hover {
 #formSubmit{
   cursor:pointer;
 }
+.pages .container h2{
+  background-color: var(--lighterGreen);
+  width: fit-content;
+}

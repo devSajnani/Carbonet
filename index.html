@@ -101,32 +101,38 @@
             </p>
             <form id="myform">
         
-              <label for="music" class="questions">For how much time do you approximately stream music over the internet per day?</label><br>
+              <label for="music" class="questions">For how many hours do you approximately stream music over the internet per day? (20-24 i guess?)</label><br>
               <input type="number" name="music" min="0" max="24" id="music" inputmode="numeric">
               <br>
-              <label for="video" class="questions">How much do you approximately spend streaming video on platforms such as Netflix or Youtube?</label><br>
+              <label for="video" class="questions">What about streaming video on platforms such as Netflix or Youtube?</label><br>
               <input type="number" name="video" min="0" max="24" id="video" inputmode="numeric">
               <br>
-                  <label for="social_media" class="questions">How much do you spend scrolling on social media platforms such as Instagram or Twitter in one day?</label><br>
+                  <label for="social_media" class="questions">Scrolling on social media platforms such as Instagram or Twitter?(We know you use it)</label><br>
               <input type="number" name="social_media" min="0" max="24" id="social_media" inputmode="numeric">
               <br>
-                  <label for="calls" class="questions" >Approximately how much time do you spend over phone calls?</label><br>
+                  <label for="calls" class="questions" >How many do you spend chatting with your best friend over phone calls?(or maybe a relative you don't wish to speak to but they wouldn't hang up the phone)</label><br>
               <input type="number" name="calls" min="0" max="24" id="calls" inputmode="numeric">
               <br>
-                  <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?</label><br>
-              <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric">
+                  <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?(We aren't expecting anything less than a 4, and hats off to you if it is!)</label><br>
+              <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric"> 
               <br>
-              <label>Approximately how many total emails do you send AND receive per day?<br>(Pre-checked an option)</label><br>
+              <label>Approximately how many total emails do you send AND receive per day?<br>(We have pre-checked an option for people like us)</label><br>
                   <input type="radio" class="mail" value="less" checked /><100 <br>
                   <input type="radio" class="mail" value="medium" />100-300 <br>
-                  <input type="radio" class="mail" value="high" />300+ <br>
+                  <input type="radio" class="mail" value="high" />300+ (quite a busy person, I see)<br>
                   <a id="formSubmit" class="link-guidelines" onclick="Calculate();">Calculate your footprint!</a>
+
+                  <p>If you do not enter anything in a few(or all) fields, we're going to take pre-determined values based on averages.
+                    <br>
+                    Your footprint might be lower than that! To get the best approximation, do not leave a single field blank (especially considering we're not asking you how much time you spend glued to that phone or laptop that is soo precious to you, or that gaming PC you spent two thousand dollars on).
+                  </p>
           </form>
          
             <div class="answer">
               <h1></h1>
-              <div style="display: grid;">
-                <div class="car-equivalent">
+              <div style="display:flex; justify-content: space-evenly;">
+              <aside class="car-equivalent">
+                <div class="container">
                   <lord-icon
                   src="https://cdn.lordicon.com/uetqnvvg.json"
                   id="car-icon" 
@@ -134,12 +140,38 @@
                   trigger="loop"
                   style="width:250px;height:250px; display: none; justify-content: center; ">
                   </lord-icon>
+                </div>
+                </aside>
+            <aside class="air-equivalent">
+              <div class="container">
+                <lottie-player id="plane-icon" src="https://assets3.lottiefiles.com/packages/lf20_2osntsxz.json" background="transparent"  speed="1"  style="width: 250px; height: 250px; display: none;" loop autoplay>
+                </lottie-player>
               </div>
-            <div class="air-equivalent">
-
-            </div>
-            </div>
-            </div>
+            </aside>
+          </div>
+            </div>            
+          </section>
+        </article>
+        <article class="pages">
+          <section class="container">
+            <h2>Additional Info</h2>
+            
+            <p>We have a lot more in store for you in addition to our calculator!</p>
+            <p>We have partnered with OnlyPlanet.in on their goal to reach 1 million people(!) in 2 years. Visit OnlyPlanet.in <a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer">here!</a>
+              </p>
+              <p>
+              We also have a 30 day challenge where we provide you with simple tasks everyday to reduce your footprint. Ironically (or is it really?), most of the tasks ask you to stop doing a certain thing, rather than do something. Register using <a href="https://forms.gle/SbDjvy3GvWpXyYsM8" target="_blank" rel="noopener noreferrer">this</a> link to take part in our 30 day challenge, and be proud of yourself and your contribution to a better Earth!
+            </p>
+            <p>
+              We also post carbon literacy videos, along with all updates on what we will doing in the future on our Instagram page. Follow us <a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" >using this link</a> to know more.
+            </p>
+            <p>
+              I guess this has been too long of a ride. <br>
+              One final thing. <br> 
+              We have a section for our featured blog, where we discuss interdisciplinary fields with the environment, and podcasts, where we interview climate change and sustainability experts.
+              <br>
+              Just scroll down a bit more and you'll find our resources.
+            </p>
           </section>
         </article>
       </div>
@@ -148,9 +180,8 @@
       <div class="container">
         <h4 id="profile-title">Blogs</h4>
         <ul>
-          <li class="profile-title">Earth Overshoot Day 2021</li>
-          <li class="profile-author">Carbon Markets</li>
-        
+          <li>Earth Overshoot Day 2021</li>
+          <li>Carbon Markets</li>
         </ul>
       </div>
     </aside>
@@ -159,9 +190,7 @@
         <h2>Featured Podcasts</h2>
         <ul class="features">
           <li>
-            <span>
-              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1" target="_blank" rel="noopener noreferrer">Ma'am Sunita Rajesh<span aria-hidden="true"></a>
-            </span>
+              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1" target="_blank" rel="noopener noreferrer">Ma'am Sunita Rajesh</a>
           </li>
         </ul>
       </div>
@@ -173,6 +202,7 @@
           the Carbonet.in team.
         </p>
         <ul>
+          <li><a href="https://forms.gle/SbDjvy3GvWpXyYsM8" target="_blank" rel="noopener noreferrer" class="link-support"><img src="https://img.icons8.com/color/20/000000/form.png"/>Register for our 30 day campaign!</a></li>
           <li>
             <a href="https://open.spotify.com/show/6R8Jpoc2b7yZc6EcoTc0H7?si=aOTgMaMXQliO417SXueazg&dl_branch=1" target="_blank" rel="noopener noreferrer" class="link-github"
               ><svg width="60px" height="60px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect fill="#D2FBD0" height="60"
@@ -205,8 +235,9 @@
              C135.661,29.421,132.821,28.251,129.921,28.251z"/>
          </g>
          </svg>
-         Follow us on Instagram</a></li>
+         Follow us on Instagram.</a></li>
          <li><a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer" class="link-support"><img src="https://img.icons8.com/office/16/000000/globe.png"/>Find your complete footprint using our OnlyPlanet referral link!</a></li>
+         
         </ul>
         <p>
           Write to us at this <a href="mailto:sajnanidev2004@gmail.com"> email</a> 
@@ -217,5 +248,6 @@
     </footer>
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>

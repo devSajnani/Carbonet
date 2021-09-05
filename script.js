@@ -29,16 +29,16 @@ var answer = Number(video.value)*400 +
   + Number(getEmail())* ((0.50*0.03) + (0.25*4) + (0.25)* 50);
 document.getElementById("myform").style.display='none';
 
-document.querySelector("#car-icon").style.display='flex';
 
-
+document.getElementById("car-icon").style.display="flex";
+document.getElementById("plane-icon").style.display="flex";
 document.querySelector(".answer h1").appendChild(document.createTextNode( (Math.round(100*(answer/1000))/100) + "kg"));
 var carVal= Math.round(100*(answer/650))/100;
 var carbon= document.createElement("p");
 carbon.appendChild(document.createTextNode("This quantity is equal to driving " + carVal + " km."));
 document.querySelector(".car-equivalent").appendChild(carbon);
 document.querySelector(".car-equivalant").style.display='block';
-
+document.querySelector(".air-equivalent").style.display='block';
 }
 
 

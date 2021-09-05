@@ -7,6 +7,7 @@
     <link href="styles.css" rel="stylesheet" />
   </head>
   <body>
+    <div style= "width:1fr;" class="mask">
     <header>
       <div class="container">
         <h1 id="heading">Carbonet.in</h1>
@@ -101,19 +102,19 @@
             </p>
             <form id="myform">
         
-              <label for="music" class="questions">For how many hours do you approximately stream music over the internet per day? (20-24 i guess?)</label><br>
+              <label for="music">For how many hours do you approximately stream music over the internet per day? (20-24 I guess?)</label><br>
               <input type="number" name="music" min="0" max="24" id="music" inputmode="numeric">
               <br>
-              <label for="video" class="questions">What about streaming video on platforms such as Netflix or Youtube?</label><br>
+              <label for="video">What about streaming video on platforms such as Netflix or Youtube?</label><br>
               <input type="number" name="video" min="0" max="24" id="video" inputmode="numeric">
               <br>
-                  <label for="social_media" class="questions">Scrolling on social media platforms such as Instagram or Twitter?(We know you use it)</label><br>
+                  <label for="social_media" >Scrolling on social media platforms such as Instagram or Twitter? (We know you use it. Include reddit on this; being a redditor doesn't make you superior)</label><br>
               <input type="number" name="social_media" min="0" max="24" id="social_media" inputmode="numeric">
               <br>
-                  <label for="calls" class="questions" >How many do you spend chatting with your best friend over phone calls?(or maybe a relative you don't wish to speak to but they wouldn't hang up the phone)</label><br>
+                  <label for="calls"  >How many do you spend chatting with your best friend over phone calls? (or maybe a relative you don't wish to speak to but they wouldn't hang up the phone)</label><br>
               <input type="number" name="calls" min="0" max="24" id="calls" inputmode="numeric">
               <br>
-                  <label for="data" class="questions">If you know, how much is your daily internet consumption in GigaBytes(GB)?(We aren't expecting anything less than a 4, and hats off to you if it is!)</label><br>
+                  <label for="data" >If you know, how much is your daily internet consumption in GigaBytes(GB)? (We aren't expecting anything less than a 4, and hats off to you if it is!)</label><br>
               <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric"> 
               <br>
               <label>Approximately how many total emails do you send AND receive per day?<br>(We have pre-checked an option for people like us)</label><br>
@@ -122,16 +123,13 @@
                   <input type="radio" class="mail" value="high" />300+ (quite a busy person, I see)<br>
                   <a id="formSubmit" class="link-guidelines" onclick="Calculate();">Calculate your footprint!</a>
 
-                  <p>If you do not enter anything in a few(or all) fields, we're going to take pre-determined values based on averages.
-                    <br>
-                    Your footprint might be lower than that! To get the best approximation, do not leave a single field blank (especially considering we're not asking you how much time you spend glued to that phone or laptop that is soo precious to you, or that gaming PC you spent two thousand dollars on).
-                  </p>
+                
           </form>
          
-            <div class="answer">
+            <div class="answer" style="display: none;">
               <h1></h1>
-              <div style="display:flex; justify-content: space-evenly;">
-              <aside class="car-equivalent">
+              <div style="display:grid; grid-template-columns: 50% 50%;">        
+                <aside class="car-equivalent">
                 <div class="container">
                   <lord-icon
                   src="https://cdn.lordicon.com/uetqnvvg.json"
@@ -149,6 +147,15 @@
               </div>
             </aside>
           </div>
+          <p>If you do not enter anything in a few (or all) fields, we're going to take pre-determined values based on averages.
+            <br>
+            Your footprint might be lower than that! To get the best approximation, do not leave a single field blank (especially considering we're not asking you how much time you spend glued to that phone or laptop that is soo precious to you, or that gaming PC you spent two thousand dollars on). 
+            <br>
+            Calculations are really elementary since people use more than 100,000 applications, and each of these has a different battery and wifi consumption. The power emitted from a full discharge is different for each device. In addition, even you yourself might not know how many thousand text messages you send over whatsapp (or discord for our gamers).
+          </p>
+          <p>At the end of the day, we're trying the best we can based on values in acceptable ranges that we could find. Please help us if you know some more certain values!
+            <br>Scroll down to the end to find our email. Appreciate you taking the time to do this :)
+          </p>
             </div>            
           </section>
         </article>
@@ -163,12 +170,12 @@
               We also have a 30 day challenge where we provide you with simple tasks everyday to reduce your footprint. Ironically (or is it really?), most of the tasks ask you to stop doing a certain thing, rather than do something. Register using <a href="https://forms.gle/SbDjvy3GvWpXyYsM8" target="_blank" rel="noopener noreferrer">this</a> link to take part in our 30 day challenge, and be proud of yourself and your contribution to a better Earth!
             </p>
             <p>
-              We also post carbon literacy videos, along with all updates on what we will doing in the future on our Instagram page. Follow us <a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" >using this link</a> to know more.
+              We also post carbon literacy videos, along with all updates on what we will doing in the future on our Instagram page. Follow us using <a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" >this</a> link to know more.
             </p>
             <p>
               I guess this has been too long of a ride. <br>
               One final thing. <br> 
-              We have a section for our featured blog, where we discuss interdisciplinary fields with the environment, and podcasts, where we interview climate change and sustainability experts.
+              We have a section for our featured blogs, where we discuss interdisciplinary fields with the environment, and podcasts, where we interview climate change and sustainability experts.
               <br>
               Just scroll down a bit more and you'll find our resources.
             </p>
@@ -176,16 +183,19 @@
         </article>
       </div>
     </main>
-    <aside id="resources" class="profile" aria-labelledby="profile-title">
+    <section class="thesepages">
+    <div id="resources" class="profile">
       <div class="container">
-        <h4 id="profile-title">Blogs</h4>
+        <h4>Blogs</h4>
         <ul>
-          <li>Earth Overshoot Day 2021</li>
-          <li>Carbon Markets</li>
+          <li class="blog"><a onclick="showDialog(0);">Earth Overshoot Day 2021</a>
+          </li>
+          <li class="blog"><a onclick="showDialog(1);">Carbon Taxes</a></li>
+          <li class="blog"><a onclick="showDialog(2);">Carbon Markets</a></li>
         </ul>
       </div>
-    </aside>
-    <aside id="styles">
+    </div>
+    <div id="styles">
       <div class="container">
         <h2>Featured Podcasts</h2>
         <ul class="features">
@@ -194,15 +204,18 @@
           </li>
         </ul>
       </div>
-    </aside>
+    </div>
+  </section>
     <footer class="page-footer">
       <div class="container">
         <p>
           Created and maintained by
           the Carbonet.in team.
+          <br>
+          Thank you for taking the time to visit us and go through our website <3.
         </p>
         <ul>
-          <li><a href="https://forms.gle/SbDjvy3GvWpXyYsM8" target="_blank" rel="noopener noreferrer" class="link-support"><img src="https://img.icons8.com/color/20/000000/form.png"/>Register for our 30 day campaign!</a></li>
+          <li><a href="https://forms.gle/SbDjvy3GvWpXyYsM8" target="_blank" rel="noopener noreferrer" class="link-github"><img src="https://img.icons8.com/color/20/000000/form.png"/>Register for our 30 day campaign!</a></li>
           <li>
             <a href="https://open.spotify.com/show/6R8Jpoc2b7yZc6EcoTc0H7?si=aOTgMaMXQliO417SXueazg&dl_branch=1" target="_blank" rel="noopener noreferrer" class="link-github"
               ><svg width="60px" height="60px" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><rect fill="#D2FBD0" height="60"
@@ -218,7 +231,7 @@
               Listen to our podcasts.</a
             >
           </li>
-          <li><a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" class="link-support">
+          <li><a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" class="link-github">
             <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
             width="25px" height="25px" viewBox="0 0 169.063 169.063" style="padding-right: 4px;"
             xml:space="preserve">
@@ -236,7 +249,7 @@
          </g>
          </svg>
          Follow us on Instagram.</a></li>
-         <li><a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer" class="link-support"><img src="https://img.icons8.com/office/16/000000/globe.png"/>Find your complete footprint using our OnlyPlanet referral link!</a></li>
+         <li><a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer" class="link-github"><img src="https://img.icons8.com/office/16/000000/globe.png"/>Find your complete footprint using our OnlyPlanet referral link!</a></li>
          
         </ul>
         <p>
@@ -246,6 +259,39 @@
         
       </div>
     </footer>
+    </div>
+    <div class="popup"><h2>Earth Overshoot Day 2021</h2>
+      <p class="writer">By Dev Sajnani;
+        <br>1 minute read </p>
+      <div class="closebutton" onclick="closeDialog(0);">&times;</div>
+    <p>Ever heard of the Earth Overshoot day? We passed Earth Overshoot Day 2021 on July 29.<br>
+      </p>
+      <p>
+      Many might not know what this situation actually means. In simple terms, Earth Overshoot day is that day of the year when we, as humans, use up the quantity of resources our planet is able to replenish in a year. To make it even easier to understand, assume that the Earth can produce 500 units of resources in one year; then that means we have consumed all 500 units of those replenished resources on July 29. The rest of the year, till December 31 we're going to use up resources already in stock and, thus, will have a lower stock of resources to start with in 2022. <br>
+      </p>
+      <p>
+      It might be quite simple to deduce, now, that to keep the Earth suitable and habitable for future generations, we must work to have the Earth Overshoot Day on December 31 each year so that resources are not consumed at a rate faster than at which they replenish. Even if we cannot get a net positive change in the quantity of resources, the least we can do is keep it at 0 and not let existing stocks be reduced. <br>
+      </p>
+      <p>
+      Find out more about the Earth Overshoot Day <a href="https://www.overshootday.org/newsroom/past-earth-overshoot-days/ " target="_blank" rel="noopener noreferrer">here.</a>
+    </p>
+  </div>
+  <div class="popup"><h2>Carbon Taxation</h2>
+    <p class="writer">By Dev Sajnani;
+      <br>1 minute read
+    </p>
+    <div class="closebutton" onclick="closeDialog(1);">&times;</div>
+    <p>If it isn’t already obvious from the name, this taxes firms based on their carbon emissions. Higher emissions mean higher taxes, which could encourage firms to reduce emissions. However, companies look at relative costs - for example, if these taxes aren’t charged at a high rate (which they currently aren’t), firms would know it’s cheaper to pay the tax rather than invest a lot in a new production method. The reason taxes rates aren’t high, even though we know how big of a problem pollution is, is that this harm isn’t what you’d exactly call ‘quantifiable’. Calculating the costs of these emissions is difficult due to a lot of external impacts; add to this the problem of estimating the number of firms who are going to pay the tax. The biggest problem, though, is neither of these. It’s to estimate how many units of CO2e a firm releases. It is quite clear that the amount of tax that needs to be paid by a firm is extremely cumbersome to estimate making this system extremely inefficient.
+    </p>
+  </div>
+  <div class="popup"><h2>Carbon Markets</h2>
+  <p class="writer">By Dev Sajnani;
+    <br> 1.5 minute read
+  </p>
+  <div class="closebutton" onclick="closeDialog(2);">&times;</div>
+  <p>This is a relatively new system developed after people realized the problem with carbon taxes; you might have heard of the cap-and-trade. This comprises carbon credits and carbon offsets. Carbon credits basically show ownership to one metric ton of carbon dioxide equivalent, meaning that you will be allowed to release pollutants equivalent to one metric ton of CO2e. In this way, carbon credits can be bought or sold in the market. If someone pollutes less than their credits allow them to, they can sell those extra credits off while those who wish to pollute more can buy these credits. However, a similar problem arises of how to quantify how much pollutant is safe to release as the cap. Another problem would be how many credits to allot to one firm, as there is a need to take into account a lot of factors such as market size, the kind of goods the firm produces, the total pollution in the cycle of production, among other factors. Carbon offsets on the other hand entail buying offsets from third parties that work on projects to save the planet. Buying an offset for one metric ton of CO2e could mean supporting a project that plants trees or sets up renewable energy sources. Carbon offsets generate carbon credits, like the total amount of pollutants in the atmosphere being reduced thanks to these carbon offset projects, giving a firm the ability to release one more metric ton of CO2e. It is quite easy to see how carbon markets might be more likely to be successful than carbon taxes as they can actively earn more money by selling off their extra credits by polluting less.
+  </p>
+</div>
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>

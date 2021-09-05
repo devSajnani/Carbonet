@@ -3,6 +3,7 @@ emails["less"]="70";
 emails["medium"]="200";
 emails["high"]="400";
 
+var links= document.querySelectorAll('.link-github');
 function getEmail(){
   var emailNumber=0;
  var form= document.getElementById("myform");
@@ -18,14 +19,29 @@ function getEmail(){
 
 
 function Calculate(){
-var video=document.getElementById("video");
-var music=document.getElementById("music");
-var social_media=document.getElementById("social_media");
-var calls= document.getElementById("calls");
-var data= document.getElementById("data");
-var answer = Number(video.value)*400 +
- Number(data.value)*3000 + Number(calls.value)*3420
-  + Number(social_media.value)*60 + Number(music.value)* 20 
+var video=document.getElementById("video").value;
+if(video==''){
+  video=3
+}
+var music=document.getElementById("music").value;
+if(music==''){
+  music=4.5
+}
+var social_media=document.getElementById("social_media").value;
+if(social_media==''){
+  social_media=2.5
+}
+var calls= document.getElementById("calls").value;
+if(calls==''){
+  calls=1
+}
+var data= document.getElementById("data").value;
+if(data==''){
+  data=6;
+}
+var answer = Number(video)*36 +
+ Number(data)*3000 + Number(calls)*3420
+  + Number(social_media)*60 + Number(music)* 20 
   + Number(getEmail())* ((0.50*0.03) + (0.25*4) + (0.25)* 50);
 document.getElementById("myform").style.display='none';
 
@@ -39,7 +55,7 @@ car_emission.appendChild(document.createTextNode("This quantity is equal to driv
 document.querySelector(".car-equivalent").appendChild(car_emission);
 var airVal= Math.round(100*(answer/170))/100;
 var air_emission =document.createElement('p');
-air_emission.appendChild(document.createTextNode("This quantity is equal to " + airVal + " km by plane. This value is quite high even though planes release a lot of emissions, since we're taking the emission of CO2e per person per km, and there are a lot of people on a plane."));
+air_emission.appendChild(document.createTextNode("This quantity is equivalent to travelling " + airVal + " km by plane. This value is higher than that of a car's even though planes release a lot more emissions since we're taking the emission of CO2e per person per km, and there are a lot of people on a plane (Dividing this by 300 will give the actual distance, but assuming all people on the plane pollute as much as you, you'll go this far)."));
 document.querySelector(".air-equivalent").appendChild(air_emission);
 
 }
@@ -48,7 +64,6 @@ const showDialog = (Id) => {
   document.querySelectorAll('.popup')[Id].classList.add('show')
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   document.querySelector(".mask").classList.add('disableDiv');
-  var links= document.querySelectorAll('.link-github');
   for(var i=0; i<links.length; i++){
     links[i].classList.add('disabled-link');
   }
@@ -65,6 +80,7 @@ const closeDialog = (Id) => {
   window.scrollTo(0, parseInt(scrollY || '0') * -1);
   document.querySelector(".mask").classList.remove('disableDiv');
   document.querySelectorAll('.popup')[Id].classList.remove('show');
+  
   for(var i=0; i<links.length; i++){
     links[i].classList.remove('disabled-link');
   }

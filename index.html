@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Carbonet|Your personal digital footprint calculator</title>
     <link href="styles.css" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
   </head>
   <body>
     <div style= "width:1fr;" class="mask">
@@ -22,6 +24,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#calculator">Calculator</a></li>
         <li><a href="#resources">Resources</a></li>
+        <li><a href="#teamsection">Team</a></li>
       </ul>
     </nav>
 
@@ -117,10 +120,15 @@
                   <label for="data" >If you know, how much is your daily internet consumption in GigaBytes(GB)? (We aren't expecting anything less than a 4, and hats off to you if it is!)</label><br>
               <input type="number" name="data" min="0" max="24" id="data" inputmode="numeric"> 
               <br>
-              <label>Approximately how many total emails do you send AND receive per day?<br>(We have pre-checked an option for people like us)</label><br>
-                  <input type="radio" class="mail" value="less" checked /><100 <br>
-                  <input type="radio" class="mail" value="medium" />100-300 <br>
-                  <input type="radio" class="mail" value="high" />300+ (quite a busy person, I see)<br>
+              <p>Approximately how many total emails do you send AND receive per day?<br>(We have pre-checked an option for people like us)</p>
+                   <input type="radio" class="mail" name="mail" value="less" checked>
+                   <label for="less"><50</label><br>
+                   <input type="radio" class="mail" name="mail" value="medium">
+                   <label for="medium">50-150</label><br>
+                   <input type="radio" class="mail" name="mail" value="high">
+                   <label for="high">150+ (quite a busy person, I see)</label>
+                  <br>
+                  
                   <a id="formSubmit" class="link-guidelines" onclick="Calculate();">Calculate your footprint!</a>
 
                 
@@ -192,6 +200,7 @@
           </li>
           <li class="blog"><a onclick="showDialog(1);">Carbon Taxes</a></li>
           <li class="blog"><a onclick="showDialog(2);">Carbon Markets</a></li>
+          <li class="blog"><a onclick="showDialog(3);">sustainability in the Textile Industry</a></li>
         </ul>
       </div>
     </div>
@@ -200,8 +209,9 @@
         <h2>Featured Podcasts</h2>
         <ul class="features">
           <li>
-              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1" target="_blank" rel="noopener noreferrer">Ma'am Sunita Rajesh</a>
+              <a href="https://open.spotify.com/episode/6T291LwnmFQF4WI2Z0CieL?si=_Pzn6vtAROamPQ6Mo0JcMA&dl_branch=1" target="_blank" rel="noopener noreferrer">Ma'am Sunita Rajesh@OnlyPlanet.in</a>
           </li>
+          <li><a href="https://open.spotify.com/episode/05wjZn42fQqxvdUoWwOcYB?si=JJbyURBnQiiisaI615kYDQ&dl_branch=1" target="_blank" rel="noopener noreferrer">Sir Kadir and Sir Yusuf Hilmi, Co-Founders@Carbofil</a></li>
         </ul>
       </div>
     </div>
@@ -231,24 +241,6 @@
               Listen to our podcasts.</a
             >
           </li>
-          <li><a href="https://www.instagram.com/carbonet.in/" target="_blank" rel="noopener noreferrer" class="link-github">
-            <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-            width="25px" height="25px" viewBox="0 0 169.063 169.063" style="padding-right: 4px;"
-            xml:space="preserve">
-         <g>
-           <path d="M122.406,0H46.654C20.929,0,0,20.93,0,46.655v75.752c0,25.726,20.929,46.655,46.654,46.655h75.752
-             c25.727,0,46.656-20.93,46.656-46.655V46.655C169.063,20.93,148.133,0,122.406,0z M154.063,122.407
-             c0,17.455-14.201,31.655-31.656,31.655H46.654C29.2,154.063,15,139.862,15,122.407V46.655C15,29.201,29.2,15,46.654,15h75.752
-             c17.455,0,31.656,14.201,31.656,31.655V122.407z"/>
-           <path d="M84.531,40.97c-24.021,0-43.563,19.542-43.563,43.563c0,24.02,19.542,43.561,43.563,43.561s43.563-19.541,43.563-43.561
-             C128.094,60.512,108.552,40.97,84.531,40.97z M84.531,113.093c-15.749,0-28.563-12.812-28.563-28.561
-             c0-15.75,12.813-28.563,28.563-28.563s28.563,12.813,28.563,28.563C113.094,100.281,100.28,113.093,84.531,113.093z"/>
-           <path d="M129.921,28.251c-2.89,0-5.729,1.17-7.77,3.22c-2.051,2.04-3.23,4.88-3.23,7.78c0,2.891,1.18,5.73,3.23,7.78
-             c2.04,2.04,4.88,3.22,7.77,3.22c2.9,0,5.73-1.18,7.78-3.22c2.05-2.05,3.22-4.89,3.22-7.78c0-2.9-1.17-5.74-3.22-7.78
-             C135.661,29.421,132.821,28.251,129.921,28.251z"/>
-         </g>
-         </svg>
-         Follow us on Instagram.</a></li>
          <li><a href="https://www.onlyplanet.in/referred/4qzHB9yg" target="_blank" rel="noopener noreferrer" class="link-github"><img src="https://img.icons8.com/office/16/000000/globe.png"/>Find your complete footprint using our OnlyPlanet referral link!</a></li>
          
         </ul>
@@ -291,9 +283,12 @@
   <div class="closebutton" onclick="closeDialog(2);">&times;</div>
   <p>This is a relatively new system developed after people realized the problem with carbon taxes; you might have heard of the cap-and-trade. This comprises carbon credits and carbon offsets. Carbon credits basically show ownership to one metric ton of carbon dioxide equivalent, meaning that you will be allowed to release pollutants equivalent to one metric ton of CO2e. In this way, carbon credits can be bought or sold in the market. If someone pollutes less than their credits allow them to, they can sell those extra credits off while those who wish to pollute more can buy these credits. However, a similar problem arises of how to quantify how much pollutant is safe to release as the cap. Another problem would be how many credits to allot to one firm, as there is a need to take into account a lot of factors such as market size, the kind of goods the firm produces, the total pollution in the cycle of production, among other factors. Carbon offsets on the other hand entail buying offsets from third parties that work on projects to save the planet. Buying an offset for one metric ton of CO2e could mean supporting a project that plants trees or sets up renewable energy sources. Carbon offsets generate carbon credits, like the total amount of pollutants in the atmosphere being reduced thanks to these carbon offset projects, giving a firm the ability to release one more metric ton of CO2e. It is quite easy to see how carbon markets might be more likely to be successful than carbon taxes as they can actively earn more money by selling off their extra credits by polluting less.
   </p>
+  
 </div>
+
     <script src="script.js"></script>
     <script src="https://cdn.lordicon.com/libs/mssddfmo/lord-icon-2.1.0.js"></script>
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
   </body>
 </html>
+

@@ -1,7 +1,7 @@
 var emails=new Array();
-emails["less"]="70";
-emails["medium"]="200";
-emails["high"]="400";
+emails["less"]="50";
+emails["medium"]="100";
+emails["high"]="200";
 
 var links= document.querySelectorAll('.link-github');
 function getEmail(){
@@ -88,4 +88,3 @@ const closeDialog = (Id) => {
 window.addEventListener('scroll', () => {
   document.documentElement.style.setProperty('--scroll-y', `${window.scrollY}px`);
 });
-
